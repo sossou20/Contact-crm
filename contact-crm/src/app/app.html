@@ -1,0 +1,18 @@
+<header class="header">
+  <a routerLink="/" class="brand">📇 Contact CRM</a>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Navigation principale">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+      >Dashboard</a
+    >
+    <a routerLink="/contacts" routerLinkActive="active">Contacts</a>
+    <a routerLink="/favorites" routerLinkActive="active">Favoris</a>
+    <a routerLink="/categories" routerLinkActive="active">Catégories</a>
+  </nav>
+
+  <main class="content"><router-outlet /></main>
+</div>
+
+<footer class="footer">Contact CRM — Code2Work · Angular</footer>
